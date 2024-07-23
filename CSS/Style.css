@@ -1,12 +1,12 @@
 :root {
-  ---font-title: "Roboto", sans-serif;
-  ---font-body: "Archivo Black", sans-serif;
-  ---Amarillo: #f9a825;
-  ---Gris-oscuro: #4e4e50;
-  ---Gris-claro: #b0bec5;
+  ---font-body: "Poppins", sans-serif;
+  ---font-title: "Archivo Black", sans-serif;
+  ---Amarillo: #8e44ad;
+  ---Azul-oscuro: #102135;
+  ---Gris-claro: #6290be;
   ---Azul: #1e88e5;
   ----Blanco: #ffffff;
-  ---Negro: #000000;
+  ---Negro-Espacial: #0b0c10;
 }
 
 html {
@@ -21,10 +21,9 @@ html {
 }
 
 body {
-  font-family: var(---font-body);
   line-height: 1.5;
   font-size: 1.6rem;
-  background-color: var(---Gris-oscuro);
+  background-color: var(---Azul-oscuro);
 }
 /*Globales*/
 h1,
@@ -33,14 +32,16 @@ h3,
 h4,
 p {
   color: var(----Blanco);
-  font-family: var(---font-title);
+  font-family: var(---font-body);
   text-align: center;
 }
 h1 {
   font-size: 5rem;
+  font-family: var(---font-title);
 }
 h2 {
   font-size: 4rem;
+  font-family: var(---font-title);
 }
 h3 {
   font-size: 3.5rem;
@@ -74,6 +75,11 @@ a {
   a {
     text-decoration: none;
     font-size: 3rem;
+  }
+}
+@media (max-width: 360px) {
+  h1 {
+    font-size: 3.5rem;
   }
 }
 img {
@@ -115,13 +121,18 @@ nav {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 0.5rem;
   backdrop-filter: blur(0.5rem);
+  font-weight: 600;
+}
+.enlace-Navbar {
+  color: var(----Blanco);
+  font-family: var(---font-body);
 }
 .enlace-Navbar:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(46, 100, 248, 0.2);
   border-radius: 0.5rem;
   backdrop-filter: blur(0.1rem);
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   nav {
     display: block;
     text-align: center;
@@ -133,9 +144,6 @@ nav {
   }
 }
 
-.enlace-Navbar {
-  color: var(----Blanco);
-}
 /*Tarjetas*/
 .Nost-Equipo {
   flex-wrap: nowrap;
@@ -147,6 +155,12 @@ nav {
   min-height: 50rem;
   background-color: rgba(128, 128, 128, 0.61);
   flex-wrap: wrap;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+.tarjeta {
+  border: 6px solid;
+  border-image: linear-gradient(to bottom, #172875, #8e44ad) 1;
 }
 .card {
   position: relative;
@@ -157,7 +171,10 @@ nav {
   overflow: hidden;
   margin: 1.5rem 1.5rem;
   transition: 1.5s;
+  border: 6px solid;
+  border-image: linear-gradient(to bottom, #45b78b, #4b44ad) 1;
 }
+
 .card:hover {
   box-shadow: 0 1rem 1.5rem #000000;
   transform: translateY(-1.5rem);
@@ -172,12 +189,12 @@ nav {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  background: var(---Gris-claro);
+  background: var(---Negro-Espacial);
   bottom: 0;
 }
 .card .card-hed .card-image {
   position: absolute;
-  background: var(---Gris-claro);
+  background: var(---Negro-Espacial);
   padding: 5px;
   border-radius: 50%;
   width: 150px;
@@ -195,7 +212,7 @@ nav {
 .card .description {
   width: 95%;
   margin: 0 auto;
-  padding-top: 1rem;
+  padding-top: 1.4rem;
   text-align: center;
 }
 .card .description h3 {
@@ -205,5 +222,5 @@ nav {
   font-size: 2rem;
 }
 .card .description p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
