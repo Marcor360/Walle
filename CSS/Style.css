@@ -1,10 +1,10 @@
 :root {
   ---font-body: "Poppins", sans-serif;
   ---font-title: "Archivo Black", sans-serif;
-  ---Amarillo: #8e44ad;
-  ---Azul-oscuro: #102135;
-  ---Gris-claro: #6290be;
-  ---Azul: #1e88e5;
+  ---Blanco-espacial: #fffdf0;
+  ---Azul-oscuro: #182937;
+  ---Gris-claro: #b1bed2;
+  ---Azul: #2b506f;
   ----Blanco: #ffffff;
   ---Negro-Espacial: #0b0c10;
 }
@@ -153,7 +153,7 @@ nav {
   justify-content: center;
   align-items: center;
   min-height: 50rem;
-  background-color: rgba(128, 128, 128, 0.61);
+  background-color: var(---Azul);
   flex-wrap: wrap;
   overflow: hidden;
   border-radius: 1rem;
@@ -166,17 +166,17 @@ nav {
   position: relative;
   width: 300px;
   height: 400px;
-  background: var(---Amarillo);
+  background: var(---Blanco-espacial);
   border-radius: 5px;
   overflow: hidden;
   margin: 1.5rem 1.5rem;
   transition: 1.5s;
   border: 6px solid;
-  border-image: linear-gradient(to bottom, #45b78b, #4b44ad) 1;
+  border-image: linear-gradient(to bottom, #ffffff, #000000) 1;
 }
 
 .card:hover {
-  box-shadow: 0 1rem 1.5rem #000000;
+  box-shadow: 0 1rem 1.5rem var(---Negro-Espacial);
   transform: translateY(-1.5rem);
 }
 .card .card-hed {
@@ -189,12 +189,12 @@ nav {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  background: var(---Negro-Espacial);
+  background: var(---Gris-claro);
   bottom: 0;
 }
 .card .card-hed .card-image {
   position: absolute;
-  background: var(---Negro-Espacial);
+  background: var(---Gris-claro);
   padding: 5px;
   border-radius: 50%;
   width: 150px;
@@ -212,15 +212,19 @@ nav {
 .card .description {
   width: 95%;
   margin: 0 auto;
-  padding-top: 1.4rem;
+  padding-top: 1.2rem;
   text-align: center;
 }
 .card .description h3 {
   font-size: 2rem;
+  color: var(---Negro-Espacial);
 }
 .card .description h4 {
   font-size: 2rem;
+  color: var(---Negro-Espacial);
+  margin-top: -1.2rem;
 }
 .card .description p {
   font-size: 1.3rem;
+  color: var(---Negro-Espacial);
 }
