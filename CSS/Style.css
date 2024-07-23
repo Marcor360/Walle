@@ -160,7 +160,7 @@ nav {
 }
 .tarjeta {
   border: 6px solid;
-  border-image: linear-gradient(to bottom, #172875, #8e44ad) 1;
+  border-image: linear-gradient(to bottom, #460088, #020063) 1;
 }
 .card {
   position: relative;
