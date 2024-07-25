@@ -162,6 +162,10 @@ nav {
   border: 6px solid;
   border-image: linear-gradient(to bottom, #460088, #020063) 1;
 }
+.tarjeta .Text-center{
+  display: block;
+  justify-content: center;
+}
 .card {
   position: relative;
   width: 300px;
@@ -218,6 +222,7 @@ nav {
 .card .description h3 {
   font-size: 2rem;
   color: var(---Negro-Espacial);
+  margin-top: 2.2rem;
 }
 .card .description h4 {
   font-size: 2rem;
