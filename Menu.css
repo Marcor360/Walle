@@ -7,11 +7,11 @@
 }
 
 nav{
-    background: #FAEBD7;
+    background: #B1BED2;
     height: 80px;
     width: 100%;
 }
-.enlace{
+.menlace{
     position: absolute;
     padding: 20px 50px;
 }
@@ -69,7 +69,7 @@ li a.active, li a:hover{
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: #DEB887;
+        background: #4C7097;
         top: 80%;
         left: -100%;
         text-align: center;
@@ -85,7 +85,7 @@ li a.active, li a:hover{
     }
     li a:hover, li a.active{
         background: none;
-        color: #FFF8DC;
+        color: #7591BB;
     }
     #check:checked ~ ul{
         left: 0;
