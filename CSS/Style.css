@@ -177,3 +177,6 @@ img {
   text-align: center;
   margin-top: 2rem;
 }
+.foo:hover {
+  background-color: #182937;
+}
