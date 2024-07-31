@@ -180,3 +180,10 @@ img {
 .foo:hover {
   background-color: #182937;
 }
+/*SVG*/
+@media (max-width: 420px) {
+  .svg-pequeño {
+    width: 18px;
+    height: 18px;
+  }
+}
