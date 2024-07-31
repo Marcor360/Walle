@@ -124,13 +124,15 @@ img {
   font-weight: 600;
 }
 .enlace-Navbar {
-  color: var(----Blanco);
+  color: #ffffffc9;
   font-family: var(---font-body);
 }
 .enlace-Navbar:hover {
   background-color: rgba(46, 100, 248, 0.2);
   border-radius: 0.5rem;
   backdrop-filter: blur(0.1rem);
+  color: var(----Blanco);
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 @media (max-width: 768px) {
   .Navbar {
@@ -187,3 +189,4 @@ img {
     height: 18px;
   }
 }
+/*Slider*/

@@ -14,7 +14,7 @@
 }
 .tarjeta {
   border: 6px solid;
-  border-image: linear-gradient(to bottom, #460088, #020063) 1;
+  border-image: linear-gradient(to bottom, #2a6ba8, #0a123f) 1;
 }
 .tarjeta .Text-center {
   display: block;
