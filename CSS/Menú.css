@@ -1,4 +1,4 @@
-/* Estilos para el menú */
+
 header {
     background-color: rgba(128, 128, 128, 0.5); /* Gris transparente */
     padding: 10px 0;
@@ -29,7 +29,6 @@ header {
     border-bottom: 2px solid #ffcc00; /* Línea de indicación activa */
 }
 
-/* Opcional: Añade estilos para el header si es necesario */
 header .container {
     display: flex;
     flex-direction: column;
