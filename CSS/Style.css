@@ -114,17 +114,12 @@ img {
   margin-top: -10rem;
 }
 .Navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  text-align: left;
   margin-top: 10rem;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 0.5rem;
-  backdrop-filter: blur(0.5rem);
-  font-weight: 600;
 }
 .enlace-Navbar {
-  color: #ffffffc9;
+  color: #ffffff;
   font-family: var(---font-body);
 }
 .enlace-Navbar:hover {
