@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
     <!--Css-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/Normalize.css">
     <link rel="stylesheet" href="./CSS/cards.css">
     <link rel="stylesheet" href="./CSS/Menu.css">
@@ -56,7 +57,7 @@
             <!--Tarjetas-->
             <div class="Nost-Equipo">
                 <h2 class="Text-center">Conoce al equipo</h2>
-                <div class="tarjeta" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div class="tarjeta">
                     <!--Luis-->
                     <div class="card">
                         <div class="card-hed">
@@ -168,10 +169,10 @@
     <footer class="foot">
         <div class="conteiner">
             <div class="barra">
-                <a class="log" href="index.html">
+                <a class="log" href="index.html" data-aos="fade-left">
                     <h1 class="foot-text">Proyecto <span class="sp">Wall-E</span></h1>
                 </a>
-                <nav class="Navbar-foot">
+                <nav class="Navbar-foot" data-aos="fade-left">
                     <a href="#" class="enlace-Navbar foo"><svg xmlns="http://www.w3.org/2000/svg"
                             class="icon icon-tabler icon-tabler-brand-facebook svg-pequeño" width="24" height="24"
                             viewBox="0 0 24 24" stroke-width="1.7" stroke="#ffffff" fill="none" stroke-linecap="round"
@@ -217,6 +218,10 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
