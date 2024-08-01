@@ -1,0 +1,41 @@
+
+header {
+    background-color: rgba(128, 128, 128, 0.5); /* Gris transparente */
+    padding: 10px 0;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff; /* Color del texto del menú */
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 16px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.menu a.active, .menu a:hover {
+    color: #ffcc00; /* Color del texto activo o en hover */
+    border-bottom: 2px solid #ffcc00; /* Línea de indicación activa */
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-hed {
+    text-align: center;
+    margin-bottom: 20px;
+}
